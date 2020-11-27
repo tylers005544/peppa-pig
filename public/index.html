@@ -23,14 +23,16 @@
     };
 
     var game = new Phaser.Game(config);
-
+    var scene="/peppa-scene.jpg"
+    var logo="/peppa-logo-transparent.png"
+    var red="/head_crop_peppa.png"
     function preload ()
     {
         this.load.setBaseURL('http://localhost:3000');
 
-        this.load.image('sky', 'peppa-scene.jpg');
-        this.load.image('logo', 'peppa-logo-transparent.png');
-        this.load.image('red', 'head_crop_peppa.png');
+        this.load.image('sky', scene);
+        this.load.image('logo', logo);
+        this.load.image('red', red);
     }
 
     function create ()
