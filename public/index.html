@@ -42,7 +42,7 @@
 
     function create ()
     {
-        this.add.image(window.innerWidth/2, window.innerHeight/2, 'sky');
+        this.add.image(window.innerWidth/2, window.innerHeight/2, 'sky').setScale(Math.max(window.innerHeight/1264, window.innerWidth/2247));
 
         var particles = this.add.particles('red');
 
